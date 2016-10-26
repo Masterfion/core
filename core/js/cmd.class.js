@@ -754,6 +754,15 @@ if (name.indexOf("on") != -1) {
 if (name.indexOf("off") != -1) {
     return 'off';
 }
+  if (name.indexOf("désactiver") != -1) {
+        return 'off';
+    }
+    if (name.indexOf("desactiver") != -1) {
+        return 'off';
+    }
+    if (name.indexOf("activer") != -1) {
+        return 'on';
+    }
 return _tagname;
 }
 
