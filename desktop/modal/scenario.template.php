@@ -103,7 +103,7 @@ foreach (update::listRepo() as $key => $value) {
        $('#div_marketScenarioTemplate').load('index.php?v=d&modal=update.list&type=scenario&repo='+$(this).attr('data-repo')).show();
    });
 
-   $('#bt_scenarioTemplateShare').on('click', function () {
+   $('.bt_scenarioTemplateShare').on('click', function () {
     if($('#ul_scenarioTemplateList li.active').attr('data-template') == undefined){
         $('#md_scenarioTemplate').showAlert({message: 'Vous devez d\'abord selectionner un template', level: 'danger'});
         return;
